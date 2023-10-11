@@ -1,14 +1,12 @@
-@font-face {
-    font-family: 'Bebas ki';
-    src: url(../font/BebasKai.otf) type('opentype');
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+$red: #ff5d5e;
 $light-red: #ff8582;
 $light-black: #0B0E21;
 $light-gray: #edf2f6;
+$lighter-gray: #b1b1b1;
 $dark-blue: #292c3f;
-$default-font: 'Bebas ki', Arial, sans-serif;
+$default-font: 'Barlow Condensed', Arial, sans-serif;
 
 * {
     margin: 0;
@@ -22,7 +20,7 @@ $default-font: 'Bebas ki', Arial, sans-serif;
 }
 
 body {
-    font: normal 16px $default-font;
+    font: normal 18px $default-font;
     overflow-x: hidden;
 }
 
@@ -31,21 +29,36 @@ header {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    padding: 4.5% 12%;
+    padding: 4.5% 10%;
     z-index: 1000;
     
     img {
-        width: 33px;
-        height: 33px;
+        width: 36px;
+        height: 36px;
     }
     
     ul {
         display: flex;
         list-style: none;
+
+        span, .login {
+            color: $lighter-gray;
+        }
+
+        span {
+            font-size: 15px;
+            padding: 12px 30px;
+        }
         
         a {
             @include font;
+            padding: 12px 20px;
+            font-weight: bolder;
             text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -55,25 +68,25 @@ main {
         display: flex;
 
         section {
-            width: 40%;
-            margin: 4.5% 12%;
+            width: 37%;
+            margin: 6.5% 10%;
 
             h1, h2, a {
                 @include font;
             }
         
             h1 {
-                margin-top: 28px;
+                margin-top: 18px;
                 font-weight: bolder;
-                font-size: 54px;
+                font-size: 70px;
             }
             
             h2 {
-                font: normal 17px $default-font;
+                font: normal 18px $default-font;
                 
                 mark {
                     font-weight: bold;
-                    padding: 4px 10px; 
+                    padding: 4px 12px; 
                     color: white;
                     border-radius: 20px;
                     background-color: #0B0E21;
@@ -81,24 +94,41 @@ main {
                 
                 span {
                     padding: 4px 15px; 
+                    letter-spacing: 5px;
+                    color: $lighter-gray;
                 }
             }
-
+            
             p {
+                width: 290px;
+                font-size: 25px;
+                font-weight: 300;
+                color: gray;
                 margin: 28px 0 60px 0;
             }
             
             a {
-                font-weight: lighter;
+                font-weight: light;
                 text-decoration: none;
                 padding: 15px 27px;
             }
-        
+
+            .preview {
+                letter-spacing: 2px;
+                color: $lighter-gray;
+            }
+            
             .demo {
                 color: white;
                 font-weight: bold;
                 border-radius: 8px;
-                background-color: $light-red;
+                letter-spacing: 1px;
+                padding: 15px 34px;
+                background-color: $red;
+                transition: 250ms;
+                &:hover {
+                    background-color: $light-red;
+                }
             }
         }
 
@@ -112,10 +142,26 @@ main {
             height: 52%;
 
             img {
-                top: 240px;
-                right: -220px;
+                top: 50%;
+                right: -23%;
+                width: 120%;
                 position: absolute;
             }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $light-black;
+    p {
+        padding: 7px;
+        text-align: center;
+        color: white;
+        a {
+            color: white;
         }
     }
 }
