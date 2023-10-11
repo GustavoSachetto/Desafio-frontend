@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Bebas ki';
+    src: url(../font/BebasKai.otf) type('opentype');
+    font-weight: normal;
+}
+
+$light-red: #ff8582;
+$light-black: #0B0E21;
+$light-gray: #edf2f6;
+$dark-blue: #292c3f;
+$default-font: 'Bebas ki', Arial, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@mixin font {
+    color: $dark-blue;
+    text-transform: uppercase;
+}
+
+body {
+    font: normal 16px $default-font;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 4.5% 12%;
+    z-index: 1000;
+    
+    img {
+        width: 33px;
+        height: 33px;
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+        
+        a {
+            @include font;
+            text-decoration: none;
+        }
+    }
+}
+
+main {
+    article {
+        display: flex;
+
+        section {
+            width: 40%;
+            margin: 4.5% 12%;
+
+            h1, h2, a {
+                @include font;
+            }
+        
+            h1 {
+                margin-top: 28px;
+                font-weight: bolder;
+                font-size: 54px;
+            }
+            
+            h2 {
+                font: normal 17px $default-font;
+                
+                mark {
+                    font-weight: bold;
+                    padding: 4px 10px; 
+                    color: white;
+                    border-radius: 20px;
+                    background-color: #0B0E21;
+                }
+                
+                span {
+                    padding: 4px 15px; 
+                }
+            }
+
+            p {
+                margin: 28px 0 60px 0;
+            }
+            
+            a {
+                font-weight: lighter;
+                text-decoration: none;
+                padding: 15px 27px;
+            }
+        
+            .demo {
+                color: white;
+                font-weight: bold;
+                border-radius: 8px;
+                background-color: $light-red;
+            }
+        }
+
+        aside {
+            background-color: $light-gray;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 60px;
+            width: 48%;
+            height: 52%;
+
+            img {
+                top: 240px;
+                right: -220px;
+                position: absolute;
+            }
+        }
+    }
+}

@@ -2,37 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="scss/style.css">  
   <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-  
+  <header>
+    <img src="images/logo.svg" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><span>.</span></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <article>
+        <section>
+          <h2><mark>New</mark><span>Monograph Dashboard</span></h2>
+          <h1>Powerful insights into your team</h1>
+          <p>
+            Project planning and time tracking for agile teams
+          </p>
+          <a href="#" class="demo">Schedule a demo</a>
+          <a href="#">to see a live preview</a>
+        </section>
+        <aside>
+          <img src="images/illustration-devices.svg" alt="Ilustração Aparelhos">
+        </aside>
+      </article>
+  </main>
   <footer>
-    <p class="attribution">
+    <p class="attribution" hidden>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Gustavo sachetto</a>.
     </p>
   </footer>
 </body>

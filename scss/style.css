@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Bebas ki";
+  src: url(../font/BebasKai.otf) type("opentype");
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font: normal 16px "Bebas ki", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 4.5% 12%;
+  z-index: 1000;
+}
+header img {
+  width: 33px;
+  height: 33px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul a {
+  color: #292c3f;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main article {
+  display: flex;
+}
+main article section {
+  width: 40%;
+  margin: 4.5% 12%;
+}
+main article section h1, main article section h2, main article section a {
+  color: #292c3f;
+  text-transform: uppercase;
+}
+main article section h1 {
+  margin-top: 28px;
+  font-weight: bolder;
+  font-size: 54px;
+}
+main article section h2 {
+  font: normal 17px "Bebas ki", Arial, sans-serif;
+}
+main article section h2 mark {
+  font-weight: bold;
+  padding: 4px 10px;
+  color: white;
+  border-radius: 20px;
+  background-color: #0B0E21;
+}
+main article section h2 span {
+  padding: 4px 15px;
+}
+main article section p {
+  margin: 28px 0 60px 0;
+}
+main article section a {
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 15px 27px;
+}
+main article section .demo {
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #ff8582;
+}
+main article aside {
+  background-color: #edf2f6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 60px;
+  width: 48%;
+  height: 52%;
+}
+main article aside img {
+  top: 240px;
+  right: -220px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */
