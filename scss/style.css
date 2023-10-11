@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Bebas ki";
-  src: url(../font/BebasKai.otf) type("opentype");
-  font-weight: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +6,7 @@
 }
 
 body {
-  font: normal 16px "Bebas ki", Arial, sans-serif;
+  font: normal 18px "Barlow Condensed", Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -19,64 +15,95 @@ header {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  padding: 4.5% 12%;
+  padding: 4.5% 10%;
   z-index: 1000;
 }
 header img {
-  width: 33px;
-  height: 33px;
+  width: 36px;
+  height: 36px;
 }
 header ul {
   display: flex;
   list-style: none;
 }
+header ul span, header ul .login {
+  color: #b1b1b1;
+}
+header ul span {
+  font-size: 15px;
+  padding: 12px 30px;
+}
 header ul a {
   color: #292c3f;
   text-transform: uppercase;
+  padding: 12px 20px;
+  font-weight: bolder;
   text-decoration: none;
 }
+header ul a:hover {
+  text-decoration: underline;
+}
 
+main {
+  min-height: calc(100vh - 223px);
+}
 main article {
   display: flex;
 }
 main article section {
-  width: 40%;
-  margin: 4.5% 12%;
+  width: 37%;
+  margin: 6.5% 10%;
 }
 main article section h1, main article section h2, main article section a {
   color: #292c3f;
   text-transform: uppercase;
 }
 main article section h1 {
-  margin-top: 28px;
+  margin-top: 18px;
   font-weight: bolder;
-  font-size: 54px;
+  font-size: 70px;
 }
 main article section h2 {
-  font: normal 17px "Bebas ki", Arial, sans-serif;
+  font: normal 18px "Barlow Condensed", Arial, sans-serif;
 }
 main article section h2 mark {
   font-weight: bold;
-  padding: 4px 10px;
+  padding: 4px 12px;
   color: white;
   border-radius: 20px;
   background-color: #0B0E21;
 }
 main article section h2 span {
   padding: 4px 15px;
+  letter-spacing: 5px;
+  color: #b1b1b1;
 }
 main article section p {
+  width: 290px;
+  font-size: 25px;
+  font-weight: 300;
+  color: gray;
   margin: 28px 0 60px 0;
 }
 main article section a {
-  font-weight: lighter;
+  font-weight: light;
   text-decoration: none;
   padding: 15px 27px;
+}
+main article section .preview {
+  letter-spacing: 2px;
+  color: #b1b1b1;
 }
 main article section .demo {
   color: white;
   font-weight: bold;
   border-radius: 8px;
+  letter-spacing: 1px;
+  padding: 15px 34px;
+  background-color: #ff5d5e;
+  transition: 250ms;
+}
+main article section .demo:hover {
   background-color: #ff8582;
 }
 main article aside {
@@ -89,9 +116,22 @@ main article aside {
   height: 52%;
 }
 main article aside img {
-  top: 240px;
-  right: -220px;
+  top: 50%;
+  right: -23%;
+  width: 120%;
   position: absolute;
+}
+
+footer {
+  background-color: #0B0E21;
+}
+footer p {
+  padding: 7px;
+  text-align: center;
+  color: white;
+}
+footer p a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
