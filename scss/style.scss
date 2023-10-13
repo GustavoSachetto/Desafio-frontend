@@ -127,6 +127,7 @@ main {
                 padding: 15px 34px;
                 background-color: $red;
                 transition: 250ms;
+
                 &:hover {
                     background-color: $light-red;
                 }
@@ -157,6 +158,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: $light-black;
+
     p {
         padding: 7px;
         text-align: center;
