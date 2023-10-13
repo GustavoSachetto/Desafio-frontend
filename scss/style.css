@@ -64,7 +64,7 @@ main article section h2 {
   font: normal 18px "Barlow Condensed", Arial, sans-serif;
 }
 main article section h2 mark {
-  font-weight: bold;
+  font-weight: 600;
   padding: 4px 12px;
   color: white;
   border-radius: 20px;
