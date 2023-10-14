@@ -22,6 +22,14 @@ header img {
   width: 36px;
   height: 36px;
 }
+header .menu {
+  display: none;
+  background: transparent;
+}
+header .menu img {
+  height: 18px;
+  width: 26px;
+}
 header ul {
   display: flex;
   list-style: none;
@@ -29,14 +37,19 @@ header ul {
 header ul span, header ul .login {
   color: #b1b1b1;
 }
-header ul span {
-  font-size: 15px;
-  padding: 12px 30px;
+header ul span::after {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+}
+header ul li {
+  padding: 12px 20px;
 }
 header ul a {
   color: #292c3f;
   text-transform: uppercase;
-  padding: 12px 20px;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -105,6 +118,9 @@ main article section .demo:hover {
   background-color: #ff8582;
 }
 main article aside {
+  width: 50%;
+}
+main article aside .fundo {
   background-color: #edf2f6;
   position: absolute;
   top: 0;
@@ -114,9 +130,9 @@ main article aside {
   height: 52%;
 }
 main article aside img {
-  top: 50%;
+  top: 25%;
   right: -23%;
-  width: 120%;
+  width: 70%;
   position: absolute;
 }
 
@@ -152,8 +168,41 @@ footer p a {
   main article section p {
     font-size: 24px;
   }
+}
+@media screen and (max-width: 576px) {
+  header {
+    padding: 5% 8%;
+  }
+  header .menu {
+    display: block;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main article {
+    flex-direction: column-reverse;
+  }
+  main article section {
+    width: 100%;
+    margin: 6% 8%;
+  }
+  main article section h1 {
+    font-size: 67px;
+  }
+  main article section h2, main article section a {
+    font-size: 17px;
+  }
+  main article section p {
+    font-size: 24px;
+  }
+  main article aside {
+    width: 100%;
+  }
   main article aside img {
-    top: 50%;
+    width: 80%;
+    position: relative;
   }
 }
 
