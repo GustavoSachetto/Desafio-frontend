@@ -134,11 +134,7 @@ main article aside .fundo {
   height: 52%;
 }
 main article aside img {
-  top: 25%;
-  right: -18%;
-  width: 65%;
   position: absolute;
-  overflow: hidden;
 }
 
 footer {
@@ -148,7 +144,7 @@ footer {
   background-color: #0B0E21;
 }
 footer p {
-  padding: 7px;
+  padding: 7px 0;
   text-align: center;
   color: white;
 }
@@ -214,7 +210,7 @@ footer p a {
     flex-direction: column-reverse;
   }
   main article section {
-    width: 100%;
+    width: 93%;
     margin: 7%;
   }
   main article section h1 {
@@ -247,9 +243,12 @@ footer p a {
     height: 280px;
   }
   main article aside img {
-    width: 490px;
+    object-fit: cover;
+    object-position: left;
+    width: 100%;
+    height: 37.5%;
     top: 100px;
-    right: -135px;
+    right: 0;
   }
 }
 
