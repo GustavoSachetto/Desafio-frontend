@@ -7,6 +7,7 @@
 
 body {
   font: normal 17px "Barlow Condensed", Arial, sans-serif;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -213,7 +214,7 @@ footer p a {
     flex-direction: column-reverse;
   }
   main article section {
-    width: 100vw;
+    width: 100%;
     margin: 7%;
   }
   main article section h1 {
@@ -242,12 +243,13 @@ footer p a {
     padding: 10px 25px;
   }
   main article aside {
-    width: 100vw;
+    width: 100%;
+    height: 280px;
   }
   main article aside img {
-    min-width: 470px;
+    min-width: 490px;
     top: 100px;
-    right: -110px;
+    right: -135px;
   }
 }
 
