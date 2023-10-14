@@ -196,7 +196,7 @@ footer p a {
     top: 104px;
     border-radius: 4px;
     background-color: white;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1294117647);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1921568627);
   }
   header nav ul {
     display: flex;

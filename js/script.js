@@ -1,5 +1,4 @@
 $(document).ready(function() {
-   
     const menu = $('#menu');
     const img = $('#img-menu');
     const nav = $('nav');
