@@ -185,6 +185,9 @@ footer p a {
   header .menu {
     display: block;
   }
+  header nav.ativo {
+    display: block;
+  }
   header nav {
     display: none;
     position: absolute;
@@ -249,8 +252,8 @@ footer p a {
   main article aside img {
     object-fit: cover;
     object-position: left;
-    width: 380px;
-    height: 253px;
+    width: 368px;
+    height: 245px;
     top: 100px;
     right: 0;
   }

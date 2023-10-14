@@ -245,6 +245,10 @@ footer {
                 display: block;
             }
 
+            nav.ativo {
+                display: block;
+            }
+
             nav {
                 display: none;
                 position: absolute;
@@ -321,8 +325,8 @@ footer {
                     img {
                         object-fit: cover;
                         object-position: left;
-                        width: 380px;
-                        height: 253px;
+                        width: 368px;
+                        height: 245px;
                         top: 100px;
                         right: 0;
                     }
