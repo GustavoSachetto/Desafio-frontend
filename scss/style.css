@@ -212,7 +212,7 @@ footer p a {
     flex-direction: column-reverse;
   }
   main article section {
-    width: 90%;
+    width: 100vw;
     margin: 7%;
   }
   main article section h1 {
@@ -241,10 +241,12 @@ footer p a {
     padding: 10px 25px;
   }
   main article aside {
-    width: 90%;
+    width: 100vw;
   }
   main article aside img {
-    width: 100%;
+    min-width: 470px;
+    top: 10px;
+    right: -10px;
     position: relative;
     margin-bottom: 100px;
   }
