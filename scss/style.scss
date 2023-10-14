@@ -7,8 +7,13 @@ $light-gray: #edf2f6;
 $lighter-gray: #b1b1b1;
 $dark-blue: #292c3f;
 $default-font: 'Barlow Condensed', Arial, sans-serif;
-$break-small: 400px;
-$break-large: 1366px;
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
 
 * {
     margin: 0;
@@ -60,22 +65,6 @@ header {
 
             &:hover {
                 text-decoration: underline;
-            }
-        }
-    }
-
-    @media screen {
-        @media (max-width: $break-large) {
-
-            img {
-                width: 31px;
-                height: 31px;
-            }
-
-            ul {
-                li {
-                    font-size: 16px;
-                }
             }
         }
     }
@@ -169,28 +158,6 @@ main {
             }
         }
     }
-
-    @media screen {
-        @media (max-width: $break-large) {
-            article {
-                section {
-                    width: 40%;
-                
-                    h1 {
-                        font-size: 66px;
-                    }
-                    
-                    h2, a {
-                        font-size: 17px;
-                    }
-                    
-                    p {
-                        font-size: 24px;
-                    }
-                }
-            }
-        }
-    }
 }
 
 footer {
@@ -205,6 +172,45 @@ footer {
         color: white;
         a {
             color: white;
+        }
+    }
+}
+
+@media screen {
+    @media (max-width: $xxl) {
+        header {
+            padding: 5% 8%;
+        }
+
+        main {
+            article {
+                section {
+                    width: 40%;
+                    margin: 5.5% 8%;
+    
+                    h1 {
+                        font-size: 67px;
+                    }
+    
+                    h2, a {
+                        font-size: 17px;
+                    }
+    
+                    p {
+                        font-size: 24px;
+                    }
+                }
+
+                aside {
+                    img {
+                        top: 50%;
+                    }
+                }
+            }
+        }
+
+        footer {
+
         }
     }
 }

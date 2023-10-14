@@ -43,15 +43,6 @@ header ul a {
 header ul a:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 1366px) {
-  header img {
-    width: 31px;
-    height: 31px;
-  }
-  header ul li {
-    font-size: 16px;
-  }
-}
 
 main article {
   display: flex;
@@ -128,20 +119,6 @@ main article aside img {
   width: 120%;
   position: absolute;
 }
-@media screen and (max-width: 1366px) {
-  main article section {
-    width: 40%;
-  }
-  main article section h1 {
-    font-size: 66px;
-  }
-  main article section h2, main article section a {
-    font-size: 17px;
-  }
-  main article section p {
-    font-size: 24px;
-  }
-}
 
 footer {
   position: fixed;
@@ -156,6 +133,28 @@ footer p {
 }
 footer p a {
   color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  header {
+    padding: 5% 8%;
+  }
+  main article section {
+    width: 40%;
+    margin: 5.5% 8%;
+  }
+  main article section h1 {
+    font-size: 67px;
+  }
+  main article section h2, main article section a {
+    font-size: 17px;
+  }
+  main article section p {
+    font-size: 24px;
+  }
+  main article aside img {
+    top: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
