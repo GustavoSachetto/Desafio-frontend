@@ -43,6 +43,16 @@ header {
         width: 36px;
         height: 36px;
     }
+
+    .menu {
+        display: none;
+        background: transparent;
+
+        img {
+            height: 18px;
+            width: 26px;
+        }
+    }
     
     ul {
         display: flex;
@@ -52,14 +62,20 @@ header {
             color: $lighter-gray;
         }
 
-        span {
-            font-size: 15px;
-            padding: 12px 30px;
+        span::after {
+            content: " ";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: gray;
         }
         
+        li {
+            padding: 12px 20px;
+        }
+
         a {
             @include font;
-            padding: 12px 20px;
             font-weight: bolder;
             text-decoration: none;
 
@@ -142,18 +158,22 @@ main {
         }
 
         aside {
-            background-color: $light-gray;
-            position: absolute;
-            top: 0;
-            right: 0;
-            border-bottom-left-radius: 60px;
-            width: 48%;
-            height: 52%;
+            width: 50%;
+
+            .fundo {
+                background-color: $light-gray;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-bottom-left-radius: 60px;
+                width: 48%;
+                height: 52%;
+            }
 
             img {
-                top: 50%;
+                top: 25%;
                 right: -23%;
-                width: 120%;
+                width: 70%;
                 position: absolute;
             }
         }
@@ -200,10 +220,53 @@ footer {
                         font-size: 24px;
                     }
                 }
+            }
+        }
+    }
+
+    @media (max-width: $sm) {
+        header {
+            padding: 5% 8%;
+
+            .menu {
+                display: block;
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+
+        main {
+            article {
+                flex-direction: column-reverse;
+                section {
+                    width: 100%;
+                    margin: 6% 8%;
+    
+                    h1 {
+                        font-size: 67px;
+                    }
+    
+                    h2, a {
+                        font-size: 17px;
+                    }
+    
+                    p {
+                        font-size: 24px;
+                    }
+                }
 
                 aside {
+                    width: 100%;
+                    
                     img {
-                        top: 50%;
+                        width: 80%;
+                        position: relative;
                     }
                 }
             }
