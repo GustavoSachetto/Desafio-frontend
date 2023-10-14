@@ -4,7 +4,7 @@ $red: #ff5d5e;
 $light-red: #ff8582;
 $light-black: #0B0E21;
 $light-gray: #edf2f6;
-$lighter-gray: #b1b1b1;
+$lighter-gray: #a4a8b9;
 $dark-blue: #292c3f;
 $default-font: 'Barlow Condensed', Arial, sans-serif;
 
@@ -27,7 +27,7 @@ $xxl: 1400px;
 }
 
 body {
-    font: normal 18px $default-font;
+    font: normal 17px $default-font;
     overflow-x: hidden;
 }
 
@@ -58,31 +58,36 @@ header {
         display: flex;
         list-style: none;
 
-        span, .login {
+        .login {
             color: $lighter-gray;
         }
 
-        span::after {
-            content: " ";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: gray;
-        }
         
         li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 12px 20px;
-        }
+            
+            a {
+                @include font;
+                font-weight: bolder;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
 
-        a {
-            @include font;
-            font-weight: bolder;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
+            span {
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                margin: 0 10px;
+                background-color: $lighter-gray;
             }
         }
+
     }
 }
 
@@ -155,6 +160,7 @@ main {
                     background-color: $light-red;
                 }
             }
+
         }
 
         aside {
@@ -226,17 +232,43 @@ footer {
 
     @media (max-width: $sm) {
         header {
-            padding: 5% 8%;
+            padding: 8%;
+
+            img {
+                width: 28px;
+                height: 28px;
+            }
 
             .menu {
                 display: block;
             }
 
             nav {
+                display: none;
+                position: absolute;
+                padding: 15px;
+                width: 80%;
+                top: 104px;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: 2px 0 10px #00000021;
+
                 ul {
                     display: flex;
                     flex-direction: column;
                     text-align: center;
+
+                    li {
+                        font-size: 18px;
+                        letter-spacing: 1px;
+
+                        span {
+                            position: absolute;
+                            border-radius: 0;
+                            width: 80%;
+                            height: 1px;
+                        }
+                    }
                 }
             }
         }
@@ -246,26 +278,47 @@ footer {
                 flex-direction: column-reverse;
                 section {
                     width: 100%;
-                    margin: 6% 8%;
+                    margin: 7%;
     
                     h1 {
-                        font-size: 67px;
+                        font-size: 40px;
+                        line-height: 40px;
                     }
     
-                    h2, a {
-                        font-size: 17px;
+                    h2 {
+                        font-size: 15px;
                     }
     
                     p {
-                        font-size: 24px;
+                        margin: 20px 0 40px 0;
+                        font-size: 23px;
+                    }
+
+                    a {
+                        font-size: 13px;
+                        padding: 10px 15px;
+                    }
+
+                    .preview {
+                        letter-spacing: 1px;
+                        color: $lighter-gray;
+                    }
+                    
+                    .demo {
+                        color: white;
+                        font-weight: 600;
+                        border-radius: 6px;
+                        letter-spacing: 1px;
+                        padding: 10px 25px;
                     }
                 }
 
                 aside {
+                    display: none;
                     width: 100%;
                     
                     img {
-                        width: 80%;
+                        width: 100%;
                         position: relative;
                     }
                 }
