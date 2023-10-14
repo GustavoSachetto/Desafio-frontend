@@ -6,10 +6,11 @@ $(document).ready(function() {
 
     menu.click(() => {
         nav.toggleClass('ativo');
+        if (nav.attr('class') == 'ativo') {
+            img.attr('src', 'images/icon-close.svg');
+        } else {
+            img.attr('src', 'images/icon-hamburger.svg');
+        }
     });
-
-    if (nav.attr('class') == 'ativo') {
-        img.attr('src', 'images/icon-close.svg');
-    }
     
 });
