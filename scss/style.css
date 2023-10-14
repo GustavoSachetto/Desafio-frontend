@@ -212,7 +212,7 @@ footer p a {
     flex-direction: column-reverse;
   }
   main article section {
-    width: 100%;
+    width: 90%;
     margin: 7%;
   }
   main article section h1 {
@@ -228,10 +228,9 @@ footer p a {
   }
   main article section a {
     font-size: 13px;
-    padding: 10px 15px;
+    padding: 10px;
   }
   main article section .preview {
-    letter-spacing: 1px;
     color: #a4a8b9;
   }
   main article section .demo {
@@ -242,12 +241,12 @@ footer p a {
     padding: 10px 25px;
   }
   main article aside {
-    display: none;
-    width: 100%;
+    width: 90%;
   }
   main article aside img {
     width: 100%;
     position: relative;
+    margin-bottom: 100px;
   }
 }
 

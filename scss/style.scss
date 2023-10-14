@@ -277,7 +277,7 @@ footer {
             article {
                 flex-direction: column-reverse;
                 section {
-                    width: 100%;
+                    width: 90%;
                     margin: 7%;
     
                     h1 {
@@ -296,11 +296,10 @@ footer {
 
                     a {
                         font-size: 13px;
-                        padding: 10px 15px;
+                        padding: 10px;
                     }
 
                     .preview {
-                        letter-spacing: 1px;
                         color: $lighter-gray;
                     }
                     
@@ -314,12 +313,12 @@ footer {
                 }
 
                 aside {
-                    display: none;
-                    width: 100%;
+                    width: 90%;
                     
                     img {
                         width: 100%;
                         position: relative;
+                        margin-bottom: 100px;
                     }
                 }
             }
