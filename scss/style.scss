@@ -165,7 +165,7 @@ main {
 
         aside {
             width: 50%;
-
+            
             .fundo {
                 background-color: $light-gray;
                 position: absolute;
@@ -178,9 +178,10 @@ main {
 
             img {
                 top: 25%;
-                right: -23%;
-                width: 70%;
+                right: -18%;
+                width: 65%;
                 position: absolute;
+                overflow: hidden;
             }
         }
     }
@@ -318,8 +319,7 @@ footer {
                     img {
                         min-width: 470px;
                         top: 100px;
-                        right: -80px;
-                        margin-bottom: 100px;
+                        right: -110px;
                     }
                 }
             }
