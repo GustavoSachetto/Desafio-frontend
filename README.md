@@ -24,8 +24,10 @@ __Tecnologias Utilizadas:__
 __Link acesso:__ https://gustavosachetto.github.io/Desafio-frontend/
 
 __Resultado desktop:__
+
 ![resultado desktop](https://github.com/GustavoSachetto/Desafio-frontend/assets/136517074/053d9920-dbfd-4307-ad18-cd1ea3b52069)
 
 __Resultado mobile:__
+
 ![image](https://github.com/GustavoSachetto/Desafio-frontend/assets/136517074/46c62ad8-9614-42f0-ba0d-584fc3ffdc37)
 
