@@ -7,13 +7,9 @@ $light-gray: #edf2f6;
 $lighter-gray: #a4a8b9;
 $dark-blue: #292c3f;
 $default-font: 'Barlow Condensed', Arial, sans-serif;
-
-$xs: 0;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+$small: 992px;
+$normal: 1200px;
+$big: 1400px;
 
 * {
     margin: 0;
@@ -108,7 +104,7 @@ main {
                 margin-top: 18px;
                 font-weight: bolder;
                 line-height: 75px;
-                font-size: 70px;
+                font-size: 65px;
             }
             
             h2 {
@@ -205,7 +201,7 @@ footer {
 }
 
 @media screen {
-    @media (max-width: $xxl) {
+    @media (max-width: $big) {
         header {
             padding: 5% 8%;
         }
@@ -217,22 +213,53 @@ footer {
                     margin: 5.5% 8%;
     
                     h1 {
-                        font-size: 67px;
+                        font-size: 60px;
                     }
     
                     h2, a {
-                        font-size: 17px;
+                        font-size: 15px;
                     }
     
                     p {
-                        font-size: 24px;
+                        font-size: 21px;
                     }
                 }
             }
         }
     }
 
-    @media (max-width: $sm) {
+    @media (max-width: $normal) {
+        header {
+            padding: 4% 6%;
+        }
+
+        main {
+            article {
+                section {
+                    width: 40%;
+                    margin: 5.5% 6%;
+    
+                    h1 {
+                        font-size: 52px;
+                    }
+    
+                    h2 {
+                        font-size: 16px;
+                    }
+    
+                    p {
+                        font-size: 19px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $small) {
         header {
             padding: 8%;
 

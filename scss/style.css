@@ -76,7 +76,7 @@ main article section h1 {
   margin-top: 18px;
   font-weight: bolder;
   line-height: 75px;
-  font-size: 70px;
+  font-size: 65px;
 }
 main article section h2 {
   font: normal 18px "Barlow Condensed", Arial, sans-serif;
@@ -165,16 +165,37 @@ footer p a {
     margin: 5.5% 8%;
   }
   main article section h1 {
-    font-size: 67px;
+    font-size: 60px;
   }
   main article section h2, main article section a {
-    font-size: 17px;
+    font-size: 15px;
   }
   main article section p {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 4% 6%;
+  }
+  main article section {
+    width: 40%;
+    margin: 5.5% 6%;
+  }
+  main article section h1 {
+    font-size: 52px;
+  }
+  main article section h2 {
+    font-size: 16px;
+  }
+  main article section p {
+    font-size: 19px;
+  }
+  main article section a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
   header {
     padding: 8%;
   }
