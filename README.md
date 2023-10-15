@@ -13,8 +13,6 @@ __O design da tela está na pasta (design) acima.__
 
 ## Resolução:
 
-__Link acesso:__ https://gustavosachetto.github.io/Desafio-frontend/
-
 __Tecnologias Utilizadas:__
 
 * __HTML:__ Construção básica dos elementos do site;
@@ -22,10 +20,12 @@ __Tecnologias Utilizadas:__
 * __Sass:__ Estilização e Responsividade completa do site;
 
 * __Jquery:__ Menu responsivo.
+* 
+__Link acesso:__ https://gustavosachetto.github.io/Desafio-frontend/
 
-### Resultado desktop:
+__Resultado desktop:__
 ![resultado desktop](https://github.com/GustavoSachetto/Desafio-frontend/assets/136517074/053d9920-dbfd-4307-ad18-cd1ea3b52069)
 
-### Resultado mobile:
+__Resultado mobile:__
 ![image](https://github.com/GustavoSachetto/Desafio-frontend/assets/136517074/46c62ad8-9614-42f0-ba0d-584fc3ffdc37)
 
