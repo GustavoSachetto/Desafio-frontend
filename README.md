@@ -13,6 +13,8 @@ __O design da tela está na pasta (design) acima.__
 
 ## Resolução:
 
+__Link acesso:__ https://gustavosachetto.github.io/Desafio-frontend/
+
 __Tecnologias Utilizadas:__
 
 * __HTML:__ Construção básica dos elementos do site;
