@@ -21,11 +21,9 @@ __Tecnologias Utilizadas:__
 
 * __Jquery:__ Menu responsivo.
 
-__Resultado:__
-
-### Desktop:
+### Resultado desktop:
 ![resultado desktop](https://github.com/GustavoSachetto/Desafio-frontend/assets/136517074/053d9920-dbfd-4307-ad18-cd1ea3b52069)
 
-### Mobile:
+### Resultado mobile:
 ![image](https://github.com/GustavoSachetto/Desafio-frontend/assets/136517074/46c62ad8-9614-42f0-ba0d-584fc3ffdc37)
 
